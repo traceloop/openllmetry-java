@@ -45,9 +45,6 @@ public class Client {
 
         try (SpanExporter exporter = LoggingSpanExporter.create()) {
             try (SpanProcessor processor = BatchSpanProcessor.builder(exporter).build()) {
-//                try (TracerProvider tracerProvider = new TracerProvider()) {
-//                    // Tracing is now set up
-//                }
             }
         }
     }
